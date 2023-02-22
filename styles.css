@@ -1,5 +1,92 @@
+:root{
+    /* creo variables pra los colores */
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --dark-blue-transparency: hsl(212, 14%, 21%);
+    --very-dark-blue: hsl(216, 12%, 8%);
 
+    /* creo variables para los tamaños de letra */
+    --estandar: 15px;
+    --title: 20px;
+    --md: 12px;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background: var(--very-dark-blue);
+}    
+
+/* CONTENEDOR PRINCIPAL */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--dark-blue);
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.main-container img{
+    width: 14px;
+    height: 14px;
+    margin: 28px auto 0 20px;
+}
+
+/* TEXTOS */
+.question{
+    font-size: var(--title);
+    margin: 40px auto 8px 20px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.comment{
+    font-size: var(--md);
+    margin: 8px 8px 20px 20px;
+    color: var(--light-grey);
+}
+
+/* BOTONES DE NUMEROS */
+.rate-container{
+    display: grid;
+    grid-template-columns: 54px 54px 54px 54px 54px;
+    justify-items: center;
+    margin: 0 0 24px 0;
+}
+.rate-button{
+    font-size: var(--md);
+    background-color: var(--dark-blue-transparency);
+    border: none;
+    border-radius: 100%;
+    height: 38px;
+    width: 38px;
+    color: var(--medium-grey);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.rate-button:hover{
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.rate-button:visited{
+    background-color: var(--light-grey);
+    color: var(--white);
+}
 
 /* LINKS */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--light-grey);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
