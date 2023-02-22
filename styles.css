@@ -19,6 +19,7 @@ body {
     background: var(--very-dark-blue);
 }    
 
+
 /* CONTENEDOR PRINCIPAL */
 .main-container{
     display: flex;
@@ -40,6 +41,10 @@ body {
     align-items: center;
     justify-content: space-around;
     border-radius: 50%;
+}
+
+.inactive{
+    display: none !important;
 }
 
 .icon-container img{
@@ -111,6 +116,48 @@ body {
     background-color: var(--white);
     color: var(--orange);
 }
+
+
+/* CONTENEDOR THANK YOU */
+.thank-you-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--dark-blue);
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    margin: 200px auto 32px auto;
+}
+
+.thank-you-message img{
+    height: 84px;
+    margin-top: 28px;
+}
+
+.text-rate-result{
+    color: var(--orange);
+    background-color: var(--dark-blue-transparency);
+    border-radius: 20px;
+    font-size: var(--md);
+    margin: 20px auto 8px;
+    border: 8px var(--dark-blue-transparency) solid;
+}
+
+.text-thanks-result{
+    font-size: var(--title);
+    font-weight: bold;
+    color: var(--white);
+    margin: 4px 0 0;
+}
+
+.final-message-result{
+    font-size: var(--md);
+    text-align: center;
+    margin: 14px 24px 20px;
+    color: var(--light-grey);
+}
+
 
 /* LINKS */
 .attribution { 
